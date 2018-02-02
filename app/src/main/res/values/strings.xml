@@ -1,0 +1,30 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Numbers Quiz</string>
+    <string name="start">Start</string>
+    <string name="send">Send</string>
+    <string name="next">Next</string>
+    <string name="restart">Restart</string>
+    <string name="question1">How many strawberries are in the picture?</string>
+    <string name="question2">How many ladybugs and bees are in the picture?</string>
+    <string name="question3">How many flowers do you all together in this picture?</string>
+    <string name="question4">The picture shows more mushrooms than strawberries.</string>
+    <string name="q1answer1">6</string>
+    <string name="q1answer2">5</string>
+    <string name="q1answer3">9</string>
+    <string name="q2answer1">6</string>
+    <string name="q2answer2">9</string>
+    <string name="q2answer3">2</string>
+    <string name="q2answer4">3</string>
+    <string name="q3answer">6</string>
+    <string name="q4answer1">True</string>
+    <string name="q4answer2">False</string>
+    <string name="hint">Resolution</string>
+    <string name="answer">You answer: </string>
+    <string name="score">Your score: </string>
+    <string name="score_number">0<xliff:g id="number" example="0">%d</xliff:g></string>
+    <string name="score1">You´re smart, but you still have to practice.</string>
+    <string name="score2">You´re a busy bee. Keep it up!</string>
+    <string name="score3">That was perfect!</string>
+    <string name="toast_correct">Correct!</string>
+    <string name="toast_wrong">Wrong!</string>
+</resources>

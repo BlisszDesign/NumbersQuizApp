@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/image_margin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/questionImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mushroom_four" />
+
+        <ImageView
+            android:id="@+id/questionImage2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/strawberry_two" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/radio2Question"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/unkemptbold"
+        android:text="@string/question4" />
+
+    <RadioGroup
+        android:id="@+id/radio2Answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/radio2Answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q4answer1"
+            style="@style/RadioButton"/>
+
+        <RadioButton
+            android:id="@+id/radio2Answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/q4answer2"
+            style="@style/RadioButton"/>
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/button_margin"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/send_button"
+            style="@style/ButtonLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            />
+
+        <Button
+            android:id="@+id/next_button"
+            style="@style/ButtonRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            />
+    </LinearLayout>
+
+</LinearLayout>
