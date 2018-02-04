@@ -21,14 +21,15 @@
                 android:id="@+id/questionImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/image_margin"
+                android:layout_marginLeft="@dimen/margin_left"
                 android:src="@drawable/bee_six" />
 
             <ImageView
                 android:id="@+id/questionImage2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/image_margin"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
                 android:src="@drawable/ladybug_three" />
 
         </LinearLayout>

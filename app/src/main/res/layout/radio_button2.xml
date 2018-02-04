@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
+        android:id="@+id/imageLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/image_margin"
+        android:layout_margin="@dimen/landTop"
         android:orientation="horizontal">
 
         <ImageView
@@ -20,7 +26,8 @@
             android:id="@+id/questionImage2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/strawberry_two" />
+            android:src="@drawable/strawberry_two"
+            android:layout_marginLeft="@dimen/margin_left"/>
 
     </LinearLayout>
 
@@ -30,6 +37,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/unkemptbold"
+        android:layout_below="@id/imageLayout"
+        android:layout_centerInParent="true"
         android:text="@string/question4" />
 
     <RadioGroup
@@ -37,6 +46,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_below="@id/radio2Question"
+        android:layout_centerInParent="true"
         >
 
         <RadioButton
@@ -61,7 +72,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="@dimen/button_margin"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_below="@id/radio2Answer"
+        android:layout_centerInParent="true">
 
         <Button
             android:id="@+id/send_button"
@@ -69,6 +82,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/send"
+            android:onClick="sendButton"
+            android:visibility="visible"
             />
 
         <Button
@@ -77,7 +92,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/next"
+            android:onClick="nextButton"
             />
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
+</ScrollView>

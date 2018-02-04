@@ -14,10 +14,10 @@ import android.widget.Toast;
 
 
 public class QuestionOne extends AppCompatActivity {
-
+    //        declaring variables
     int score;
     RadioButton answer1, answer2, answer3;
-    Button send, nextButton;
+    Button send;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,18 +29,22 @@ public class QuestionOne extends AppCompatActivity {
         answer2 = findViewById(R.id.radioAnswer2);
         answer3 = findViewById(R.id.radioAnswer3);
         send = findViewById(R.id.send_button);
+
     }
 
-    public void sendButton(View view) {
+    // sending and checking answer
+    public void sendAnswer(View view) {
         if (answer3.isChecked()) {
-            score += 2;
+            score += 3;
             messageCorrect();
         } else {
             messageWrong();
         }
-//        send.setEnabled(false);
+//        set the send button visibility
+        send.setVisibility(View.INVISIBLE);
     }
 
+    // set toast messages
     public void messageWrong() {
         Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
     }
@@ -49,7 +53,8 @@ public class QuestionOne extends AppCompatActivity {
         Toast.makeText(this, getString(R.string.toast_correct), Toast.LENGTH_SHORT).show();
     }
 
-    public void nextButton(View view) {
+    //set next button
+    public void nextQuiz(View view) {
         Intent nextButtonIntent = new Intent(QuestionOne.this, QuestionTwo.class);
         nextButtonIntent.putExtra("score", score);
         startActivity(nextButtonIntent);

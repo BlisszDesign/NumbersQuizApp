@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<dimen name="button_margin">20dp</dimen>
+    <dimen name="button_margin">20dp</dimen>
     <dimen name="image_margin">10dp</dimen>
     <dimen name="text_margin">20dp</dimen>
     <dimen name="margin_top">30dp</dimen>
@@ -10,7 +10,8 @@
     <dimen name="checkbox">60dp</dimen>
     <dimen name="bigTopMargin">148dp</dimen>
     <dimen name="marginTop">42dp</dimen>
-    <dimen name="bigLeftMargin">90dp</dimen>
+    <dimen name="bigLeftMargin">70dp</dimen>
     <dimen name="margin">30dp</dimen>
+    <dimen name="landTop">20dp</dimen>
 
 </resources>

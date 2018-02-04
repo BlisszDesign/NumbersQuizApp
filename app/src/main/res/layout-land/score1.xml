@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -10,8 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/image_margin"
-        android:src="@drawable/bee" />
+        android:layout_marginTop="@dimen/image_margin"        android:src="@drawable/mushroom" />
 
     <TextView
         android:id="@+id/score"
@@ -25,8 +28,8 @@
         android:text="@string/score" />
 
     <TextView
-        style="@style/Score"
         android:id="@+id/scoreNumber"
+        style="@style/Score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/score"
@@ -39,18 +42,19 @@
         style="@style/Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/scoreNumber"
+        android:layout_centerHorizontal="true"
         android:fontFamily="@font/unkemptbold"
         android:text="@string/score1" />
 
     <Button
-        android:id="@+id/restart_button"
+        android:id="@+id/restartButton"
         style="@style/Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/scoreText"
+        android:onClick="returnToStart"
         android:text="@string/restart" />
 
 </RelativeLayout>
+</ScrollView>

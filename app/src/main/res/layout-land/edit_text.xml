@@ -13,23 +13,22 @@
        android:id="@+id/imageLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/image_margin"
+        android:layout_marginTop="@dimen/image_margin"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/questionImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/sunflower_one"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="@dimen/margin_left"/>
+            android:src="@drawable/sunflower_one"
+            android:layout_marginLeft="@dimen/bigLeftMargin"/>
 
         <ImageView
             android:id="@+id/questionImage2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="@dimen/margin_right"
             android:src="@drawable/flower_five" />
 
     </LinearLayout>

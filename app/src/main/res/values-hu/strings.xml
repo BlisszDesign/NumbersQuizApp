@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Numbers Quiz</string>
+    <string name="start">Start</string>
+    <string name="send">Küldés</string>
+    <string name="next">Tovább</string>
+    <string name="restart">Újrakezdés</string>
+    <string name="question1">Mennyi eper van a képen?</string>
+    <string name="question2">Mennyi pillangó és mennyi méhecske van a képen?</string>
+    <string name="question3">Összesen mennyi virág van a képen?</string>
+    <string name="question4">A képen több gomba van, mint eper.</string>
+    <string name="q1answer1">6</string>
+    <string name="q1answer2">5</string>
+    <string name="q1answer3">9</string>
+    <string name="q2answer1">6</string>
+    <string name="q2answer2">9</string>
+    <string name="q2answer3">2</string>
+    <string name="q2answer4">3</string>
+    <string name="q3answer">6</string>
+    <string name="q4answer1">Igaz</string>
+    <string name="q4answer2">Hamis</string>
+    <string name="hint">Megoldás</string>
+    <string name="score">Pontjaid:</string>
+    <string name="score_number">0</string>
+    <string name="score1">Ügyes vagy, de nem árt egy kis gyakorlás még.</string>
+    <string name="score2">Szorgos méhecske vagy. Csak így tovább!</string>
+    <string name="score3">Ez tökéletes!</string>
+    <string name="toast_correct">Helyes!</string>
+    <string name="toast_wrong">Ez hibás!</string>
+</resources>
