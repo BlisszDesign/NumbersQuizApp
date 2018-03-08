@@ -33,23 +33,20 @@
     </style>
 
     <style name="Button">
-        <item name="android:background">@drawable/round_button</item>
-        <item name="android:textColor">@color/button_text</item>
+        <item name="android:background">@android:color/transparent</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_marginTop">@dimen/marginTop</item>
     </style>
 
     <style name="ButtonRight">
-        <item name="android:background">@drawable/round_button</item>
-        <item name="android:textColor">@color/button_text</item>
+        <item name="android:background">@android:color/transparent</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:layout_marginLeft">@dimen/margin_left</item>
     </style>
 
     <style name="ButtonLeft">
-        <item name="android:background">@drawable/round_button</item>
-        <item name="android:textColor">@color/button_text</item>
+        <item name="android:background">@android:color/transparent</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:layout_marginRight">@dimen/margin_right</item>
     </style>
@@ -59,5 +56,13 @@
         <item name="android:textSize">30sp</item>
         <item name="android:layout_marginLeft">@dimen/margin_left</item>
         <item name="android:layout_marginRight">@dimen/text_margin</item>
+    </style>
+
+    <style name="ToastText">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginRight">@dimen/text_margin</item>
+        <item name="android:layout_marginTop">@dimen/text_margin</item>
     </style>
 </resources>

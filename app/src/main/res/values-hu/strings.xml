@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Numbers Quiz</string>
-    <string name="start">Start</string>
-    <string name="send">Küldés</string>
-    <string name="next">Tovább</string>
-    <string name="restart">Újrakezdés</string>
     <string name="question1">Mennyi eper van a képen?</string>
     <string name="question2">Mennyi pillangó és mennyi méhecske van a képen?</string>
     <string name="question3">Összesen mennyi virág van a képen?</string>

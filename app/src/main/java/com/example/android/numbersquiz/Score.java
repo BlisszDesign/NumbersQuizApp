@@ -14,11 +14,11 @@ import android.widget.TextView;
 
 public class Score extends AppCompatActivity {
     //    declaring variables
-    int score;
-    int score1 = 4;
-    int score2 = 8;
-    ImageView image;
-    TextView scoreNumber, rating;
+    public int score;
+    private int score1 = 4;
+    private int score2 = 8;
+    private ImageView image;
+    private TextView scoreNumber, rating;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

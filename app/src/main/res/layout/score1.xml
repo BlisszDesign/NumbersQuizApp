@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/image_margin"        android:src="@drawable/mushroom" />
+        android:layout_marginTop="@dimen/image_margin"
+        android:src="@drawable/mushroom" />
 
     <TextView
         android:id="@+id/score"
@@ -47,14 +48,14 @@
         android:fontFamily="@font/unkemptbold"
         android:text="@string/score1" />
 
-    <Button
+    <ImageButton
         android:id="@+id/restartButton"
         style="@style/Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/scoreText"
         android:onClick="returnToStart"
-        android:text="@string/restart" />
+        android:src="@drawable/replay" />
 
 </RelativeLayout>
 </ScrollView>

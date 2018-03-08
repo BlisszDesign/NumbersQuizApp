@@ -22,7 +22,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_left"
-                android:src="@drawable/bee_six" />
+                android:src="@drawable/six" />
 
             <ImageView
                 android:id="@+id/questionImage2"
@@ -30,7 +30,7 @@
                 android:layout_height="match_parent"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
-                android:src="@drawable/ladybug_three" />
+                android:src="@drawable/three" />
 
         </LinearLayout>
 
@@ -112,22 +112,23 @@
             android:layout_margin="@dimen/button_margin"
             android:orientation="horizontal">
 
-            <Button
+            <ImageButton
                 android:id="@+id/sendCheck"
                 style="@style/ButtonLeft"
+                android:src="@drawable/submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="sendAnswerButton"
-                android:text="@string/send"
-                android:visibility="visible" />
+                android:visibility="visible"
+                />
 
-            <Button
+            <ImageButton
                 android:id="@+id/nextCheck"
                 style="@style/ButtonRight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="nextQuizButton"
-                android:text="@string/next" />
+                android:src="@drawable/next" />
         </LinearLayout>
 
     </RelativeLayout>

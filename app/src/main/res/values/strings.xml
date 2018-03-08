@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Numbers Quiz</string>
-    <string name="start">Start</string>
-    <string name="send">Send</string>
-    <string name="next">Next</string>
-    <string name="restart">Restart</string>
     <string name="question1">How many strawberries are in the picture?</string>
     <string name="question2">How many ladybugs and bees are in the picture?</string>
     <string name="question3">How many flowers do you all together in this picture?</string>

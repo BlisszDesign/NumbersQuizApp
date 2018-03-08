@@ -20,13 +20,13 @@
             android:id="@+id/questionImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/mushroom_four" />
+            android:src="@drawable/four" />
 
         <ImageView
             android:id="@+id/questionImage2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/strawberry_two"
+            android:src="@drawable/two"
             android:layout_marginLeft="@dimen/margin_left"/>
 
     </LinearLayout>
@@ -76,24 +76,23 @@
         android:layout_below="@id/radio2Answer"
         android:layout_centerInParent="true">
 
-        <Button
-            android:id="@+id/send_button"
+        <ImageButton
+            android:id="@+id/sendCheck"
             style="@style/ButtonLeft"
+            android:src="@drawable/submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/send"
-            android:onClick="sendButton"
+            android:onClick="sendAnswerButton"
             android:visibility="visible"
             />
 
-        <Button
-            android:id="@+id/next_button"
+        <ImageButton
+            android:id="@+id/nextCheck"
             style="@style/ButtonRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/next"
-            android:onClick="nextButton"
-            />
+            android:onClick="nextQuizButton"
+            android:src="@drawable/next" />
     </LinearLayout>
 
 </RelativeLayout>
