@@ -9,5 +9,5 @@ Third project in Udacity Android Basics course
 ![screenshot_2018-03-09-18-28-32-925_com example android numbersquiz](https://user-images.githubusercontent.com/22984926/37226754-40553b0a-23db-11e8-8720-bd7456058830.png)
 ![screenshot_2018-03-09-18-28-40-246_com example android numbersquiz](https://user-images.githubusercontent.com/22984926/37226755-407a8a36-23db-11e8-961b-06a0cb0ae1d8.png)
 
-## Licence
+## Credit
 The used images designed by Freepik and Roundicons from Flaticon.
