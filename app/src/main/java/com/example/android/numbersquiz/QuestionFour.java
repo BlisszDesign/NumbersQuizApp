@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -17,9 +18,12 @@ import android.widget.Toast;
  */
 
 public class QuestionFour extends AppCompatActivity {
-   public int score;
+   private int score;
+   private int score1 = 4;
+   private int score2 = 8;
     private RadioButton answer1;
     private ImageButton send;
+    private  ImageButton restart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,7 @@ public class QuestionFour extends AppCompatActivity {
         score = extras.getInt("score");
         answer1 = findViewById(R.id.radio2Answer1);
         send = findViewById(R.id.sendCheck);
+        restart = findViewById(R.id.restartButton);
 
     }
 
@@ -63,9 +68,65 @@ public class QuestionFour extends AppCompatActivity {
         toast.show();
     }
 
-    public void nextQuizButton(View view) {
-        Intent nextButtonIntent = new Intent(QuestionFour.this, Score.class);
+    public void nextButton(View view) {
+        if (score <= score1) {
+            displayScoreOne();
+            restart.setVisibility(View.VISIBLE);
+            return;
+        } else if (score > score1 && score <= score2) {
+            displayScoreTwo();
+            restart.setVisibility(View.VISIBLE);
+            return;
+        } else {
+            displayScoreThree();
+        }
+
+        restart.setVisibility(View.VISIBLE);
+        /*Intent nextButtonIntent = new Intent(QuestionFour.this, Score.class);
         nextButtonIntent.putExtra("score", score);
-        startActivity(nextButtonIntent);
+        startActivity(nextButtonIntent);*/
+    }
+
+    public void displayScoreOne () {
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(R.layout.score1, (ViewGroup) findViewById(R.id.score1));
+        TextView text = (TextView) layout.findViewById(R.id.scoreNumber);
+        text.setText(String.valueOf(score));
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER,0,0);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(layout);
+        toast.show();
+    }
+
+    public void displayScoreTwo () {
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(R.layout.score2, (ViewGroup) findViewById(R.id.score2));
+        TextView text = (TextView) layout.findViewById(R.id.scoreNumber);
+        text.setText(String.valueOf(score));
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER,0,0);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(layout);
+        toast.show();
+    }
+
+    public void displayScoreThree () {
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(R.layout.score3, (ViewGroup) findViewById(R.id.score3));
+        TextView text = (TextView) layout.findViewById(R.id.scoreNumber);
+        text.setText(String.valueOf(score));
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER,0,0);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(layout);
+        toast.show();
+    }
+
+    // return to mainActivity
+    public void returnToStart(View view) {
+        finish();
+        Intent intent = new Intent(QuestionFour.this, MainActivity.class);
+        startActivity(intent);
     }
 }

@@ -13,8 +13,9 @@
         android:id="@+id/imageLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="@dimen/image_margin"
+        android:layout_marginTop="17dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -27,6 +28,7 @@
             android:id="@+id/questionImage2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_left"
             android:src="@drawable/two" />
 
     </LinearLayout>
@@ -59,15 +61,19 @@
 
         <RadioButton
             android:id="@+id/radio2Answer2"
+            style="@style/RadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/q4answer2"
-            style="@style/RadioButton"/>
+            android:layout_alignLeft="@+id/radio2Answer"
+            android:layout_alignStart="@+id/radio2Answer"
+            android:layout_alignTop="@+id/radio2Answer"
+            android:text="@string/q4answer2" />
 
 
     </RadioGroup>
 
     <LinearLayout
+        android:id="@+id/buttons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -91,9 +97,23 @@
             style="@style/ButtonRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="nextQuizButton"
+            android:onClick="nextButton"
             android:src="@drawable/next" />
     </LinearLayout>
 
+    <ImageButton
+        android:id="@+id/restartButton"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttons"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp"
+        android:onClick="returnToStart"
+        android:src="@drawable/replay"
+        android:visibility="invisible"/>
+
 </RelativeLayout>
+
+    
 </ScrollView>

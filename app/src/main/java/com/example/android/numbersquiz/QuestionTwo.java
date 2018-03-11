@@ -38,8 +38,7 @@ public class QuestionTwo extends AppCompatActivity {
     }
 
     public void sendAnswerButton(View view) {
-        if (answer1.isChecked() && answer4.isChecked()) {
-
+        if (answer1.isChecked() && answer4.isChecked() && !answer2.isChecked() && !answer3.isChecked()) {
             score += 3;
             messageCorrect();
         } else {

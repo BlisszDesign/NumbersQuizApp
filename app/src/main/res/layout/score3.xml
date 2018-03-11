@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/score1"
+    android:id="@+id/score3"
     android:background="@color/score_toast">
 
     <ImageView
@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/image_margin"
-        android:src="@drawable/mushroom" />
+        android:src="@drawable/ladybug" />
 
     <TextView
         android:id="@+id/score"
@@ -44,6 +44,8 @@
         android:layout_below="@+id/scoreNumber"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/unkemptbold"
-        android:text="@string/score1" />
+        android:text="@string/score3" />
 
-   </RelativeLayout>
+
+
+</RelativeLayout>
