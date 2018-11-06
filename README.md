@@ -1,6 +1,8 @@
 # NumbersQuizApp
 Third project in Udacity Android Basics course
 
+ An educational app for kids in Hungarian and English language. Questions are about the basics of counting, like comparing, summing up and recognizing quantities. Each response will display an ability toast message to see if they have responded correctly. In the end, based on the summary of the correct answers, a cute little drawing with the number of points appears.
+
 ## Screenshots
 ![screenshot_2018-03-09-18-27-34-893_com example android numbersquiz](https://user-images.githubusercontent.com/22984926/37226748-3f520792-23db-11e8-90a8-cd732f0f065b.png)
 ![screenshot_2018-03-09-18-27-51-037_com example android numbersquiz](https://user-images.githubusercontent.com/22984926/37226749-3f87d3fe-23db-11e8-84fa-bbd86558853a.png)
